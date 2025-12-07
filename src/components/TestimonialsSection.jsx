@@ -9,41 +9,40 @@ import { fadeIn, textVariant } from "../utils/motion";
 const testimonials = [
   {
     id: 1,
-    name: "Robin Ayala Doe", 
-    image: "https://randomuser.me/api/portraits/men/77.jpg",
-    text: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast.",
+    name: "Анна Ковалёва", 
+    image: "https://randomuser.me/api/portraits/women/77.jpg",
+    text: "Нашла здесь отличную ветеринарную клинику для своего кота. Подсказали, к какому врачу лучше обратиться, и объяснили, как ухаживать после процедуры. Сервис очень помог!",
   },
   {
     id: 2,
-    name: "John De marli",
-    image: "https://randomuser.me/api/portraits/women/90.jpg", 
-    text: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.",
+    name: "Игорь Малышев",
+    image: "https://randomuser.me/api/portraits/men/90.jpg", 
+    text: "Большое спасибо команде! Благодаря вашим рекомендациям щенок стал гораздо спокойнее, научился базовым командам и перестал грызть мебель. Наконец-то есть результат!",
   },
   {
     id: 3,
-    name: "Rowhan Smith",
-    image: "https://randomuser.me/api/portraits/men/90.jpg",
-    text: "When she reached the first hills of the Mountains, she had a last view back on the of her hometown Bookmarksgrove, the headline.",
+    name: "Марина Васильева",
+    image: "https://randomuser.me/api/portraits/women/90.jpg",
+    text: "Очень удобно, что на сайте собраны проверенные клиники. Нашла врача рядом с домом за пару минут. Плюс получила советы по уходу за пожилой собакой — всё чётко и понятно.",
   },
   {
     id: 4,
-    name: "Sarah Johnson",
+    name: "Евгения Романова",
     image: "https://randomuser.me/api/portraits/women/45.jpg",
-    text: "The customer service has been exceptional. They went above and beyond to help me solve my problems and were always available when I needed them.",
+    text: "Обращалась из-за странного поведения кошки. Сервис дал подробные рекомендации по безопасности в доме и снижению стресса. Реально помогло — кошка стала спокойнее.",
   },
   {
     id: 5,
-    name: "Michael Chen",
-    image: "https://randomuser.me/api/portraits/men/32.jpg",
-    text: "I've been using their services for over a year now and couldn't be happier. The platform is intuitive and the features are exactly what I needed for my business.",
+    name: "Светлана Лебедева",
+    image: "https://randomuser.me/api/portraits/women/32.jpg",
+    text: "Здорово, что здесь можно получить советы по воспитанию и понять, как правильно выстроить общение с животным. Наш кот перестал царапаться и стал контактнее. Спасибо!",
   },
   {
     id: 6,
-    name: "Emma Wilson",
-    image: "https://randomuser.me/api/portraits/women/28.jpg",
-    text: "What impressed me most was how quickly they responded to my requests. The team is professional, knowledgeable, and truly cares about their customers' success.",
-  },
-
+    name: "Максим Дорофеев",
+    image: "https://randomuser.me/api/portraits/men/38.jpg",
+    text: "Пользуюсь сайтом уже месяц. Очень ценно, что можно быстро найти клинику, получить рекомендации по уходу и даже советы по безопасности на прогулках. Отличный сервис!",
+  }
 ];
 
 const TestimonialsSection = () => {
@@ -57,13 +56,13 @@ const TestimonialsSection = () => {
           variants={textVariant(0.2)}
           className="text-3xl md:text-4xl font-bold mb-4"
         >
-          What our happy client say
+          Что говорят наши клиенты
         </motion.h2>
         <motion.p 
           variants={fadeIn('up', 0.4)}
           className="text-gray-600"
         >
-          Things that make it the best place to start trading
+          Реальные отзывы о нашем сервисе для животных
         </motion.p>
       </motion.div>
 

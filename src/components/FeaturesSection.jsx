@@ -5,19 +5,22 @@ import { fadeIn, textVariant } from "../utils/motion";
 const FeaturesSection = () => {
   const features = [
     {
-      icon: "🔍", 
-      title: "Find out what you need",
-      description: "We present you a proposal and discuss nitty-gritty like"
+      icon: "🐶", 
+      title: "Инструкция ухода за  собакой",
+      link: "https://giperzoo.by/blog/kak-uxazhivat-za-sobakami-polnyij-gid-dlya-vladelczev/",
+      description: "Нажмите на этот текст для полной инструкции по уходу"
     },
     {
-      icon: "⚙️",
-      title: "Work out the details", 
-      description: "Communication protocols apart from engagement models"
+      icon: "😺",
+      title: "Инструкция ухода за кошкой", 
+      link:"https://www.purinaone.ru/cat/articles/new-owner-tips/kak-uhazhivat-za-koshkoj",
+      description: "Нажмите на этот текст для полной инструкции по уходу"
     },
     {
-      icon: "🚀",
-      title: "We get to work fast",
-      description: "Protocols apart from engage models, pricing billing"
+      icon: "🐦",
+      title: "Инструкция ухода за птицами",
+      link:"https://czv.kz/sovetyi-po-uxodu-za-pticzami-v-domashnix-usloviyax.html",
+      description: "Нажмите на этот текст для полной инструкции по уходу"
     }
   ]
 
@@ -36,13 +39,13 @@ const FeaturesSection = () => {
           variants={textVariant(0.2)}
           className="text-3xl font-bold mb-4"
         >
-          How can we help your business?
+          Как мы можем обезопасить своих животных?
         </motion.h2>
         <motion.p 
           variants={fadeIn('up', 0.4)}
           className="text-gray-600"
         >
-          When you resell besnik, you build trust and increase
+          Мы предлагаем комплексное решение для зашиты ваших животных
         </motion.p>
       </motion.div>
       
@@ -82,7 +85,7 @@ const FeaturesSection = () => {
               variants={fadeIn('up', 0.6 * (index + 1))}
               className="text-gray-500 text-center"
             >
-              {feature.description}
+             <a href={feature.link}> {feature.description}</a>
             </motion.p>
           </motion.div>
         ))}
@@ -92,15 +95,7 @@ const FeaturesSection = () => {
         variants={fadeIn('up', 0.7)}
         className="text-center mt-12"
       >
-        <motion.button 
-          variants={fadeIn('up', 0.8)}
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="bg-blue-600 text-white cursor-pointer px-8 py-3 rounded-full font-medium hover:bg-blue-700 transition-colors relative"
-        >
-          Become a Partner
-          <div className="absolute -z-10 w-full h-full rounded-full bg-blue-600/30 blur-xl top-0 left-0"></div>
-        </motion.button>
+       
       </motion.div>
     </motion.section>
   )

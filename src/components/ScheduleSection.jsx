@@ -18,7 +18,7 @@ const ScheduleSection = () => {
         >
           <motion.img 
             variants={fadeIn('up', 0.4)}
-            src={scheduleImage} 
+            src="https://rkf.org.ru/wp-content/uploads/2022/05/%D0%94%D0%A11-400x321.png" 
             alt="Statistics dashboard" 
             className="w-full h-auto"
           />
@@ -33,27 +33,27 @@ const ScheduleSection = () => {
             variants={fadeIn('up', 0.4)}
             className="text-orange-500 font-semibold"
           >
-            SCHEDULE
+            ОБУЧЕНИЕ ЖИВОТНЫХ
           </motion.span>
           <motion.h2 
             variants={textVariant(0.5)}
             className="text-3xl md:text-4xl font-bold text-navy-900 mt-4 mb-6"
           >
-            Streamline Your Business <br />
-            With Smart Scheduling Solutions
+            Оптимизируйте обучение ваших   питомцев<br />
+            с умными методиками
           </motion.h2>
           <motion.p 
             variants={fadeIn('up', 0.6)}
             className="text-gray-600 mb-8"
           >
-            Take control of your time and boost productivity with our intelligent scheduling system. Automate appointments, manage team availability, and deliver exceptional customer experiences through seamless calendar management.
+           Возьмите под контроль процесс дрессировки и социализации ваших животных. Используйте проверенные методики, автоматизируйте план занятий, отслеживайте прогресс и создавайте безопасную и эффективную среду для обучения.
           </motion.p>
           <motion.a 
             variants={fadeIn('up', 0.7)}
-            href="#" 
+            href="https://vetna.info/stati/dressirovka-i-obuchenie-domashnikh-zhivotnykh-sekrety-uspeshnogo-vospitaniya/" 
             className="text-blue-500 font-semibold flex items-center gap-2 hover:gap-4 transition-all"
           >
-            Explore scheduling features
+            Подробнее о методах обучения животных →
             <motion.svg 
               variants={fadeIn('left', 0.8)}
               className="w-5 h-5" 
